@@ -1,0 +1,8 @@
+<header>
+    <a class="logo" href="/"><span class="accent">Pizza</span> order</a>
+    <% if (user) { %>
+        <a href="/profile" class="username accent"><%= user.user_login %></a>
+    <% } else { %>
+        <a class="accent" href="/login">Log in</a>
+    <% } %>
+</header>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+
+    <%- include('partials/links'); %>
+</head>
+<body>
+    
+    <form id="login-form">
+        <div class="form-text">
+            <h1>Log in | <a href="/">Home</a></h1>
+        </div>
+
+        <div class="form-element">
+            <div class="form-input-wrapper">
+                <input type="text" name="user-login" id="user-login" class="form-input" placeholder="Login" required>
+                <label for="user-login" class="form-input-label">Login</label>
+            </div>
+            <div class="form-input-wrapper">
+                <input type="password" name="user-password" id="user-password" class="form-input" placeholder="Password" required>
+                <label for="user-password" class="form-input-label">Password</label>
+            </div>
+            <p id="form-error"></p>
+        </div>
+
+        <div class="form-button"><button>Log in</button></div>
+        <div class="form-button"><a href="/register">Sign up</a></div>
+    </form>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

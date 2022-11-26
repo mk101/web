@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takes order</title>
+
+    <%- include('partials/links'); %>
+</head>
+<body>
+    <%- include('partials/header', {user: user}); %>
+
+    <% if (pizzas.length === 0) { %>
+        <div class="container">
+            <div class="alert">
+                <h1 class="alert-head">Oh</h1>
+                <p class="alert-desc">Pizzas not selected</p>
+            </div>
+        </div>
+    <% } else { %>
+        <form id="order-form">
+            <div class="form-text">
+                <h1>Order</h1>
+            </div>
+
+            <% pizzas.forEach((pizza) => { %>
+                <%- include('partials/pizza-order', {pizza: pizza}); %>
+            <% }); %>
+
+            <div class="form-text">
+                <h1>Total: <span id="total-price"><%= pizzas.map(p => p.price).reduce((a,b) => a + b, 0) %></span>₽</h1>
+            </div>
+
+            <div class="form-text">
+                <h1>User data</h1>
+            </div>
+
+            <div class="form-element">
+                <div class="form-input-wrapper">
+                    <input <% if (user) { %> value="<%= user.user_address %>" <% } %>
+                    class="form-input" type="text" name="user-address" id="user-address" placeholder="Your Address" required>
+                    <label for="user-address" class="form-input-label">Your Address</label>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <input <% if (user) { %> value="<%= user.user_phone%>" <% } %>
+                    class="form-input" type="tel" name="user-phone" id="user-phone" placeholder="Your Phone" required>
+                    <label for="user-phone" class="form-input-label">Your Phone</label>
+                </div>
+            </div>
+
+            <div class="form-button"><button>Submit</button></div>
+        </form>
+
+        <script src="/js/order.js"></script>
+    <% } %>
+</body>
+</html>

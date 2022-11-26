@@ -1,0 +1,278 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.accent {
+    color: #F78671;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: center;
+
+    box-shadow: 10px 0 10px rgba(0, 0, 0, .2);
+}
+
+header a, header p {
+    text-decoration: none;
+}
+
+header .logo {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+header .username {
+    margin: 0;   
+}
+
+.pizzas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.pizza-block {
+    margin: 5px 10px;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.pizza-block:hover {
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, .2);
+}
+
+.pizza-name {
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+.selected, .selected:hover {
+    box-shadow: 0px 15px 10px #f78571a1;
+}
+
+button {
+    color: #fff;
+    background-color: #F78671;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: solid 6px #d67463;
+    transition: all ease .2s;
+}
+
+button:hover {
+    background-color: #ee806c;
+}
+
+button:active {
+    border-bottom: solid 0px #d67463;
+    margin-bottom: 6px;
+    transform: translateY(6px);
+}
+
+.make-order {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 47px);
+}
+
+.alert {
+    text-align: center;
+}
+
+.alert-head {
+    color: #F78671;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.alert-desc {
+    margin: 0;
+}
+
+#order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-text {
+    width: 390px;
+}
+
+.form-text h1 {
+    margin-bottom: 6px;
+}
+
+.form-element {
+    width: 350px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.order-pizza-name {
+    color: #F78671;
+}
+
+.order-pizza-desc {
+    font-style: italic;
+}
+
+.divider {
+    margin-top: 4px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+}
+
+.order-pizza-price-wrapper {
+    margin-top: 8px;
+}
+
+.form-input-wrapper:last-child {
+    margin-bottom: 10px;
+}
+
+.form-input-wrapper {
+    position: relative;
+    padding: 15px 0 0 0;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.form-input {
+    width: calc(100% - 4px);
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    color: #333;
+    padding: 7px 0px;
+    padding-left: 4px;
+    background-color: transparent;
+    border-bottom: 1px solid #F78671;
+    transition: border-color 0.2s ease;
+}
+
+.form-input::placeholder {
+    color: transparent;
+}
+
+.form-input:placeholder-shown ~ .form-input-label {
+    font-size: 16px;
+    cursor: text;
+    top: 20px;
+    left: 4px;
+}
+
+.form-input-label, .form-input:focus ~ .form-input-label {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    display: block;
+    transition: .2s;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.form-input:focus ~ .form-input-label {
+    color: #F78671;
+}
+
+.form-input:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #F78671;
+}
+
+.form-button {
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+textarea.form-input {
+    resize: vertical;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #F78671;
+}
+
+.form-button a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form-error {
+    color: #ee806c;
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-log-out {
+    cursor: pointer;
+}
+
+.saved {
+    background-color: #2db64d;
+    border-bottom: solid 6px #25943f;
+}
+
+.saved:hover {
+    background-color: #2db64d;
+}
+
+.saved:active {
+    border-bottom: solid 6px #25943f;
+    transform: translateY(0px);
+}

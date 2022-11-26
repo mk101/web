@@ -1,0 +1,14 @@
+<div class="form-element pizza-element" id="<%= pizza.id %>">
+    <h3 class="order-pizza-name"><%= pizza.name %></h3>
+    <p class="order-pizza-desc"><%= pizza.desc %>.</p>
+
+    <% Object.keys(pizza.ingredients).map(key => ({k: key, v: pizza.ingredients[key]})).filter(i => i.v === true).forEach(i => { %>
+        <div class="extra-checkbox">
+            <input type="checkbox" name="<%= pizza.id %>_<%= i.k %>" id="<%= pizza.id %>_<%= i.k %>">
+            <label for="<%= pizza.id %>_<%= i.k %>"><span class="extra-name"><%= i.k %></span> (+<span class="order-i-price"><%= prices.filter(p => p.name === i.k)[0].price %></span>₽)</label>
+        </div>
+    <% }); %>
+
+    <div class="divider"></div>
+    <p class="order-pizza-price-wrapper"><span class="order-pizza-price"><%= pizza.price %></span>₽</p>
+</div>

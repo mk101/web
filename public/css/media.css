@@ -1,0 +1,152 @@
+@media screen and (min-width: 0px) {
+    header .logo {
+        margin-right: 10vw;
+    }
+
+    .pizza-block img {
+        width: 45px;
+    }
+
+    .pizza-block {
+        padding: 0;
+    }
+
+    .pizza-name {
+        font-size: 8px;
+        width: 60px;
+    }
+
+    .pizza-price {
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .pizza-block img {
+        width: 100px;
+    }
+
+    .pizza-name {
+        font-size: 10px;
+        width: 60px;
+    }
+
+    .pizza-price {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    header .logo {
+        margin-right: 15vw;
+    }
+
+   .pizza-block {
+        padding: 7px 10px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .pizza-block img {
+        width: 110px;
+    }
+
+    header .logo {
+        margin-right: 30vw;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .pizza-block img {
+        width: 110px;
+    }
+
+    header .logo {
+        margin-right: 45vw;
+    }
+
+    .pizza-name {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .pizza-price {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 667px) {
+    header .logo {
+        margin-right: 50vw;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .pizza-block img {
+        width: 125px;
+    }
+
+    .pizza-name {
+        font-size: 16px;
+    }
+
+    .pizza-price {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header .logo {
+        margin-right: 60vw;
+    }
+}
+
+@media screen and (min-width: 812px) {
+    .pizza-block img {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .pizza-block {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pizza-block img {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1112px) {
+
+}
+
+@media screen and (min-width: 1366px) {
+    .pizza-block img {
+        width: 160px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pizza-name {
+        font-size: 18px;
+    }
+
+    .pizza-price {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .pizza-block img {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .pizza-block img {
+        width: 200px;
+    }
+}

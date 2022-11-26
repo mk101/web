@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.user_login %></title>
+
+    <%- include('partials/links'); %>
+</head>
+<body>
+    <%- include('partials/header', {user: user}); %>
+    
+    <form id="profile-form">
+        <div class="form-text">
+            <h1>Profile | <span id="form-log-out" class="accent">Log out</span></h1>
+        </div>
+
+        <div class="form-element">
+            <div class="form-input-wrapper">
+                <input type="text" name="user-address" id="user-address" class="form-input" placeholder="Address" value="<%= user.user_address %>" required>
+                <label for="user-address" class="form-input-label">Address</label>
+            </div>
+            <div class="form-input-wrapper">
+                <input type="text" name="user-phone" id="user-phone" class="form-input" placeholder="Phone" value="<%= user.user_phone %>" required>
+                <label for="user-phone" class="form-input-label">Phone</label>
+            </div>
+        </div>
+
+        <div class="form-button"><button id="save-button">Save</button></div>
+    </form>
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>
