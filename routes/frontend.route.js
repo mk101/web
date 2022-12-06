@@ -1,4 +1,4 @@
-const Router = require("express");
+const Router = require("express").Router;
 const router = new Router()
 const frontendController = require("../controllers/frontend.controller");
 
