@@ -1,6 +1,6 @@
-const Router = require("express").Router;
+const Router = require("express").Router
 const router = new Router()
-const frontendController = require("../controllers/frontend.controller");
+const frontendController = require("../controllers/frontend.controller")
 
 router.get('/', frontendController.root)
 router.get('/order', frontendController.order)
