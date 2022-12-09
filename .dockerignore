@@ -1,0 +1,11 @@
+node_modules/
+.idea/
+.git/
+.vs/
+.vscode/
+
+.gitignore
+.dockerignore
+docker-compose.yml
+Dockerfile
+init.sql
